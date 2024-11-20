@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+div {
+  padding: 20px;
+}
+
+body {
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+}
+/* App.css */
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  position: relative; /* Ensure navbar has relative positioning */
+}
+
+/* Styling for navbar links */
+.navbar a {
+  color: white; /* Set text color to white */
+  text-decoration: none; /* Remove underline from links */
+  padding: 14px 20px; /* Add padding to the links */
+  display: inline-block; /* Ensure links are displayed inline */
+}
+
+.navbar a:hover {
+  color: #ff7f50; /* Change color on hover */
+}
+
+/* Center the search container in the middle of the navbar */
+.search-container {
+  flex-grow: 1; /* Allow the search container to grow and take available space */
+  text-align: center; /* Center the search input */
+}
+
+.search-container input {
+  width: 50%; /* Adjust width to make it wider */
+  padding: 10px; /* Adjust padding for a better look */
+  font-size: 16px; /* Adjust font size for better readability */
+}
+/* App.css */
+
+/* CSS reset to remove default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  color: #ff7f50;
+}
+
+.search-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.search-container input {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* General section styling */
+.section {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Specific section styling */
+.about-section {
+  background: #f0f0f0; /* Background color for the About Us section */
+  text-align: center;
+  padding: 20px;
+}
+
+.about-section img {
+  width: 100%;
+  height: auto;
+}
+
+.mission-section {
+  background: #d0d0d0; /* Background color for the Mission section */
+}
+
+.values-section {
+  background: #b0b0b0; /* Background color for the Values section */
+}
