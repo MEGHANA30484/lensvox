@@ -66,8 +66,10 @@ body {
   flex: 1 1 calc(25% - 40px); /* Responsive design for four columns */
   max-width: calc(25% - 40px); /* Responsive design for four columns */
   text-align: center;
+  
 }
 
 .project-card h3 {
   color: #4682b4; /* Match button color for consistency */
+  padding-bottom: 2px;
 }

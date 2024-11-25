@@ -49,7 +49,7 @@ const Footer = () => {
                         { icon: <FaInstagram />, link: 'https://instagram.com' },
                         { icon: <FaGithub />, link: 'https://github.com' },
                     ].map(({ icon, link }, index) => (
-                        <a key={index} href={link} target="_blank" rel="noopener noreferrer">
+                        <a key={index} href={link} target="_blank" rel="no-opener noreferrer">
                             {icon}
                         </a>
                     ))}
