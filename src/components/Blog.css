@@ -1,14 +1,11 @@
 body {
   margin: 0;
   font-family:'Roboto', sans-serif;
-  background-color: #f9f9f9;;
   font-size: 16px;
- 
- 
 }
 
 .Blog {
-  max-width: 2400px;
+  max-width: 3000px;
   background-image: url(./images/Blog-bg.jpeg);
   background-repeat: no-repeat; 
   background-size: cover; 
@@ -22,14 +19,14 @@ body {
   
 }
 
-h1 {
+.container h1 {
   font-size: 48px;
   font-family: Montserrat,Bold;
   color: #333;
   padding-top: 5px;
   padding-bottom: 8px;
 }
-h2 {
+.container  h2 {
   font-size: 2rem;
   font-weight: 700;
   color: #333;
@@ -37,7 +34,7 @@ h2 {
   padding-bottom: 5px;
   margin:40px 0 20px;;
 }
-p {
+.container p {
   font-size: 1rem; 
   margin-bottom: 1rem; 
   color: #555; 
@@ -45,10 +42,113 @@ p {
   
   
 }
-li {
+.container li {
   color: #666;
   gap: 2px;
   padding-top: 2px;
   padding-bottom: 2px;
 }
 
+#Generative {
+  position: absolute; 
+  top: 100px; 
+  right: 35px; 
+  width: 22rem; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+  overflow: hidden; 
+  background-color:transparent; 
+  z-index: 10; 
+}
+
+.card-img-top {
+  width: 100%; 
+  height: auto;
+  border-bottom: 1px solid #e0e0e0; 
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+#Vision{
+  position: absolute; 
+  top: 620px; 
+  right: 35px; 
+  width: 22rem; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; 
+  overflow: hidden;
+  background-color:transparent; 
+  z-index: 10;
+}
+
+#Audio {
+  position: absolute; 
+  top: 1125px; 
+  right: 35px; 
+  width: 22rem; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; 
+  overflow: hidden;
+  background-color:transparent; 
+  z-index: 10;
+}
+
+
+.sidebar {
+  position: absolute;
+  top: 50px;
+  left: 35px;
+  width: 350px;
+  background: transparent;
+  padding: 15px;
+  border-right: 1px solid #ccc;
+  height: 200vh;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-top: 20px;
+
+}
+
+.tree {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tree li {
+  margin: 5px 0;
+  padding-left: 10px;
+  position: relative;
+}
+
+.tree li ul {
+  margin-left: 20px;
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+}
+
+.toggle {
+  cursor: pointer;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}

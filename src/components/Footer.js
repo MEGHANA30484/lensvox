@@ -34,8 +34,8 @@ const Footer = () => {
                         <li><a href="/contact">Research paper</a></li>
                     </ul>
                 </div>
-                {<div className='contact'>
-                <div className="footer-contact">
+                <div className='footer-contact'>
+                <div className="contact">
                     <h3>Contact Us</h3>
                     <p>Email: Contact@lensvox.com</p>
                     <p>Phone: +91 9582742697</p>
@@ -54,7 +54,7 @@ const Footer = () => {
                         </a>
                     ))}
                 </div>
-                </div>}
+                </div>
            
             </div>
             <div className="footer-bottom">

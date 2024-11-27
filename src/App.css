@@ -1,16 +1,8 @@
-body {
-  font-family: Arial, sans-serif;
-}
-
-/* div {
-  padding: 50px;
-} */
 
 body {
-  font-family: "Source Sans Pro", "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-/* App.css */
-/* Navbar styling */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -32,36 +24,12 @@ body {
   color: #ff7f50; /* Change color on hover */
 }
 
-/* Center the search container in the middle of the navbar */
-.search-container {
-  flex-grow: 1; /* Allow the search container to grow and take available space */
-  text-align: center; /* Center the search input */
-}
-
-.search-container input {
-  width: 50%; /* Adjust width to make it wider */
-  padding: 10px; /* Adjust padding for a better look */
-  font-size: 16px; /* Adjust font size for better readability */
-}
-/* App.css */
-
-/* CSS reset to remove default margins and paddings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Navbar styling */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
-}
 
 .navbar a {
   color: white;
@@ -74,16 +42,6 @@ body {
   color: #ff7f50;
 }
 
-.search-container {
-  flex-grow: 1;
-  text-align: center;
-}
-
-.search-container input {
-  width: 50%;
-  padding: 10px;
-  font-size: 16px;
-}
 
 /* General section styling */
 .section {
