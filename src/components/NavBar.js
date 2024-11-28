@@ -7,7 +7,7 @@ function NavBar() {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <Link to="/">LensVox</Link>
+          <Link to="/"><h1>LensVox</h1></Link>
         </div>
         
           

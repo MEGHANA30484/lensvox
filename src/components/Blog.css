@@ -1,128 +1,121 @@
 body {
   margin: 0;
-  font-family:'Roboto', sans-serif;
-  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; /* Keeping base font size as is */
 }
 
 .Blog {
-  max-width: 3000px;
+  max-width: 3000px; /* Keeping max-width for large screens */
   background-image: url(./images/Blog-bg.jpeg);
   background-repeat: no-repeat; 
   background-size: cover; 
   background-position: center;  
 }
 
-.container {
-  padding: 20px;
+.Blog-container {
+  padding: 1.25rem; /* Changed from 20px to rem */
   max-width: 800px;
   margin: auto;
-  
 }
 
-.container h1 {
-  font-size: 48px;
-  font-family: Montserrat,Bold;
+.Blog-container h1 {
+  font-size: 3rem; /* Adjusted from 48px */
+  font-family: Montserrat, Bold;
   color: #333;
-  padding-top: 5px;
-  padding-bottom: 8px;
+  padding-top: 0.3125rem; /* Adjusted from 5px */
+  padding-bottom: 0.5rem; /* Adjusted from 8px */
 }
-.container  h2 {
+
+.Blog-container h2 {
   font-size: 2rem;
   font-weight: 700;
   color: #333;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin:40px 0 20px;;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin: 2.5rem 0 1.25rem; /* Adjusted to rem */
 }
-.container p {
-  font-size: 1rem; 
+
+.Blog-container p {
+  font-size: 1rem;
   margin-bottom: 1rem; 
   color: #555; 
   font-family: Roboto;
-  
-  
 }
-.container li {
+
+.Blog-container li {
   color: #666;
-  gap: 2px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  gap: 0.125rem; /* Adjusted from 2px */
+  padding: 0.125rem 0;
 }
 
 #Generative {
   position: absolute; 
-  top: 100px; 
-  right: 35px; 
-  width: 22rem; 
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-  border-radius: 8px; 
-  overflow: hidden; 
-  background-color:transparent; 
-  z-index: 10; 
-}
-
-.card-img-top {
-  width: 100%; 
-  height: auto;
-  border-bottom: 1px solid #e0e0e0; 
-}
-
-.card-body {
-  padding: 15px;
-}
-
-.card-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.card-text {
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 15px;
-}
-
-#Vision{
-  position: absolute; 
-  top: 620px; 
-  right: 35px; 
-  width: 22rem; 
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px; 
+  top: 5rem; /* Use original positioning unless resized */
+  right: 2.1875rem; /* Adjusted from 35px */
+  width: 22rem; /* Same width */
+  box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
   overflow: hidden;
-  background-color:transparent; 
+  background-color: transparent; 
+  z-index: 10;
+}
+
+#Vision {
+  position: absolute; 
+  top: 38rem; /* Use original positioning unless resized */
+  right: 2.1875rem; /* Adjusted from 35px */
+  width: 22rem; /* Same width */
+  box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: transparent; 
   z-index: 10;
 }
 
 #Audio {
   position: absolute; 
-  top: 1125px; 
-  right: 35px; 
-  width: 22rem; 
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px; 
+  top: 72rem; /* Use original positioning unless resized */
+  right: 2.1875rem; /* Adjusted from 35px */
+  width: 22rem; /* Same width */
+  box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
   overflow: hidden;
-  background-color:transparent; 
+  background-color: transparent; 
   z-index: 10;
 }
 
+.card-img-top {
+  width: 100%; 
+  height: auto;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card-body {
+  padding: 1rem; /* Adjusted for flexibility */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.625rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
 
 .sidebar {
   position: absolute;
-  top: 50px;
-  left: 35px;
-  width: 350px;
+  top: 3.125rem; /* Adjusted from 50px */
+  left: 2.1875rem; /* Adjusted from 35px */
+  width: 21.875rem; /* Adjusted from 350px */
   background: transparent;
-  padding: 15px;
+  padding: 0.9375rem; /* Adjusted from 15px */
   border-right: 1px solid #ccc;
   height: 200vh;
   overflow-y: auto;
-}
-
-.sidebar h2 {
-  margin-top: 20px;
-
 }
 
 .tree {
@@ -131,24 +124,44 @@ body {
 }
 
 .tree li {
-  margin: 5px 0;
-  padding-left: 10px;
+  margin: 0.3125rem 0; /* Adjusted from 5px */
+  padding-left: 0.625rem; /* Adjusted from 10px */
   position: relative;
 }
 
 .tree li ul {
-  margin-left: 20px;
-  padding-left: 10px;
+  margin-left: 1.25rem; /* Adjusted from 20px */
+  padding-left: 0.625rem; /* Adjusted from 10px */
   border-left: 1px solid #ccc;
 }
 
 .toggle {
   cursor: pointer;
-  margin-right: 5px;
+  margin-right: 0.3125rem; /* Adjusted from 5px */
   font-weight: bold;
 }
 
-.content {
+.Blog-content {
   flex: 1;
-  padding: 20px;
+  padding: 1.25rem; /* Adjusted from 20px */
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  #Generative, #Vision, #Audio {
+    position: relative;
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+

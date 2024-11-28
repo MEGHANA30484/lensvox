@@ -32,11 +32,13 @@ body {
 .about-hero h1 {
   font-size: 4em;
   margin-bottom: 0.5em;
+  color: #333;
 }
 
 .about-hero p {
   font-size: 1.2em;
   margin: 0.5em 0;
+  color: #726e6e;
 }
 
 .mission-vision-section {

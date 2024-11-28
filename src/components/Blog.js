@@ -6,6 +6,7 @@ import Generative from "./images/gen-bg.png";
 import Vision from "./images/vision-bg.jpg";
 import Audio from "./images/audio-bg.jpg";
 
+
 function Blog() {
   const [expanded, setExpanded] = useState({});
 
@@ -36,7 +37,7 @@ function Blog() {
 
   return (
     <div className="Blog">
-      <div className="container" style={{ display: "flex" }}>
+      <div className="Blog-container" style={{ display: "flex" }}>
         {/* Sidebar */}
         <aside className="sidebar">
           <h2>Blog Categories</h2>
@@ -69,7 +70,7 @@ function Blog() {
         </aside>
 
         {/* Main Content */}
-        <div className="content">
+        <div className="Blog-content">
           <h1>
             The Rise of Artificial Intelligence: Revolutionizing the World
           </h1>
