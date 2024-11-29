@@ -1,27 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './NavBar.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./NavBar.css"; // Add CSS styles here
 
-function NavBar() {
+const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="navbar">
-      <div className="navbar-container">
-        <div className="navbar-logo">
-          <Link to="/"><h1>LensVox</h1></Link>
-        </div>
-        
-          
-        <ul className="navbar-list">
-          <li className="navbar-item"><Link to="/"></Link></li>
-          <li className="navbar-item"><Link to="/about">About</Link></li>
-          <li className="navbar-item"><Link to="/services">Services</Link></li>
-          <li className="navbar-item"><Link to="/projects">Projects</Link></li>
-          <li className="navbar-item"><Link to="/contact">Contact</Link></li>
-          <li className="navbar-item"><Link to="/blog">Blog</Link></li>
-        </ul>
+      <div className="navbar-logo">
+        <Link to="/"><h1>LensVox</h1></Link>
+      </div>
+      <div className="menu-icon" onClick={toggleMenu}>
+        ☰
+      </div>
+      <div className={`menu ${isOpen ? "open" : ""}`}>
+        <Link to="/"></Link>
+        <Link to="/about">About</Link>
+        <Link to="/services">Services</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/blog">Blog</Link>
       </div>
     </nav>
   );
-}
+};
 
 export default NavBar;
