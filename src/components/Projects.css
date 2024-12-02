@@ -6,7 +6,7 @@ body {
 
 .projects-container {
   text-align: center;
-  padding-top: 60px; /* Adjust padding to account for fixed navbar */
+  padding-top: 30px; /* Adjust padding to account for fixed navbar */
 }
 
 .hero-section {

@@ -8,7 +8,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #333;
-  padding: 10px;
+  padding: 1px;
   position: relative; /* Ensure navbar has relative positioning */
 }
 
@@ -16,7 +16,7 @@ body {
 .navbar a {
   color: white; /* Set text color to white */
   text-decoration: none; /* Remove underline from links */
-  padding: 14px 20px; /* Add padding to the links */
+  padding: 5px ; /* Add padding to the links */
   display: inline-block; /* Ensure links are displayed inline */
 }
 
@@ -34,7 +34,7 @@ body {
 .navbar a {
   color: white;
   text-decoration: none;
-  padding: 14px 20px;
+  padding: 14px ;
   display: inline-block;
 }
 

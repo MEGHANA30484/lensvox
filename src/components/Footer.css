@@ -1,7 +1,6 @@
 .footer {
     background-color: #111;
     color: #fff;
-    padding: 20 0;
     font-size: 14px;
 }
  
@@ -29,7 +28,7 @@
 .footer-summary h1{
     margin-left: 12px;
    color: #fff;
-   padding-bottom: 2px;
+   padding-bottom: 1px;
    font-family: 'Poppins', sans-serif;
 }
  

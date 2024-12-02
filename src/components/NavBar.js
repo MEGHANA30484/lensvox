@@ -8,6 +8,10 @@ const NavBar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const closeMenu = () => {
+    setIsOpen(false);
+  } ; 
+
 
   return (
     <nav className="navbar">
@@ -18,13 +22,14 @@ const NavBar = () => {
         ☰
       </div>
       <div className={`menu ${isOpen ? "open" : ""}`}>
-        <Link to="/"></Link>
-        <Link to="/about">About</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/blog">Blog</Link>
+        <Link to="/" onClick={closeMenu}>Home</Link>
+        <Link to="/about" onClick={closeMenu}>About</Link>
+        <Link to="/services" onClick={closeMenu}>Services</Link>
+        <Link to="/projects" onClick={closeMenu}>Projects</Link>
+        <Link to="/contact" onClick={closeMenu}>Contact</Link>
+        <Link to="/blog" onClick={closeMenu}>Blog</Link>
       </div>
+
     </nav>
   );
 };

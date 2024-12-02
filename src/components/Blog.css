@@ -10,12 +10,14 @@ body {
   background-repeat: no-repeat; 
   background-size: cover; 
   background-position: center;  
+
 }
 
 .Blog-container {
   padding: 1.25rem; /* Changed from 20px to rem */
   max-width: 800px;
   margin: auto;
+  /* padding-top: 30px; */
 }
 
 .Blog-container h1 {
@@ -108,7 +110,7 @@ body {
 
 .sidebar {
   position: absolute;
-  top: 3.125rem; /* Adjusted from 50px */
+  top: 3rem; /* Adjusted from 50px */
   left: 2.1875rem; /* Adjusted from 35px */
   width: 21.875rem; /* Adjusted from 350px */
   background: transparent;
