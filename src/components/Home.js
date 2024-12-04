@@ -5,7 +5,7 @@ import backgroundImage from './images/background.jpg'; // Ensure you have the ge
 function Home() {
   return (
     <div className="home-container">
-      <section className="hero-section" style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <section className="home-hero-section" style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className="overlay">
           <h1>Welcome to LensVox</h1>
           <p>We provide cutting-edge AI solutions and consultancy services.</p>

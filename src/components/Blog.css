@@ -14,10 +14,9 @@ body {
 }
 
 .Blog-container {
-  padding: 1.25rem; /* Changed from 20px to rem */
-  max-width: 800px;
+  padding: 1.25rem; 
+  max-width: 1200px;
   margin: auto;
-  /* padding-top: 30px; */
 }
 
 .Blog-container h1 {
@@ -110,13 +109,13 @@ body {
 
 .sidebar {
   position: absolute;
-  top: 3rem; /* Adjusted from 50px */
+  top: 4rem; /* Adjusted from 50px */
   left: 2.1875rem; /* Adjusted from 35px */
   width: 21.875rem; /* Adjusted from 350px */
   background: transparent;
   padding: 0.9375rem; /* Adjusted from 15px */
   border-right: 1px solid #ccc;
-  height: 200vh;
+  height: 160vh;
   overflow-y: auto;
 }
 
@@ -155,9 +154,10 @@ body {
   }
 
   .sidebar {
-    position: relative;
+    /* position: relative;
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem; */
+    display: none;
   }
 
   #Generative, #Vision, #Audio {
@@ -165,5 +165,34 @@ body {
     width: 100%;
     margin: 1rem 0;
   }
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(100% - 20px); /* Full width on small screens */
+    max-width: calc(100% - 20px); /* Ensure cards fit within the parent */
+    text-align: center;
+  }
+
+  .card-container {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Consistent gap between cards */
+  margin: 0 auto; /* Center the card layout */
+  }
 }
 
+@media (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 20px); /* Two columns on medium screens */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(25% - 20px); /* Four columns on large screens */
+    max-width: calc(25% - 20px);
+  }
+}

@@ -22,7 +22,7 @@ const NavBar = () => {
         ☰
       </div>
       <div className={`menu ${isOpen ? "open" : ""}`}>
-        <Link to="/" onClick={closeMenu}>Home</Link>
+        <Link to="/" onClick={closeMenu}></Link>
         <Link to="/about" onClick={closeMenu}>About</Link>
         <Link to="/services" onClick={closeMenu}>Services</Link>
         <Link to="/projects" onClick={closeMenu}>Projects</Link>

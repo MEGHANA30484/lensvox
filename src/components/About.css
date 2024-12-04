@@ -46,6 +46,7 @@ body {
   justify-content: space-around;
   padding: 50px 20px;
   background: #f4f4f9;
+  flex-wrap: wrap;
 }
 
 .mission, .vision {
@@ -128,4 +129,17 @@ body {
 .team-member p {
   font-size: 1em;
   margin: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+  .mission-vision-section {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align the items */
+  }
+
+  .mission, .vision {
+    width: 100%; /* Make them take full width */
+    margin-bottom: 20px; /* Add spacing between sections */
+  }
 }
