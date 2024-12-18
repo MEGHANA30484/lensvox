@@ -132,7 +132,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .mission-vision-section {
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center align the items */
@@ -141,5 +141,19 @@ body {
   .mission, .vision {
     width: 100%; /* Make them take full width */
     margin-bottom: 20px; /* Add spacing between sections */
+  }
+
+  .about-hero {
+    padding: 25px;
+    height: 55vh; 
+  }
+  .about-hero .overlay {
+    max-width: 90%;
+    width: auto;
+  }
+
+  .about-hero .overlay h1 {
+    font-size: 2em; 
+    text-decoration: solid;
   }
 }

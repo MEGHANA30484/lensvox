@@ -183,11 +183,13 @@ body {
   }
 }
 
-@media (min-width: 600px) {
-  .card {
-    flex: 1 1 calc(50% - 20px); /* Two columns on medium screens */
-    max-width: calc(50% - 20px);
+@media (max-width: 600px) {
+  .card-container {
+    flex: 1 1 calc(80% - 20px); 
+    max-width: calc(80% - 20px)
   }
+
+
 }
 
 @media (min-width: 900px) {

@@ -7,7 +7,7 @@ function Projects() {
   return (
     <div id="projects" className="projects-container">
       <section
-        className="hero-section"
+        className="project-hero"
         style={{ backgroundImage: `url(${projectImage})` }}
       >
         <div className="overlay">

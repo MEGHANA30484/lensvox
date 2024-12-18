@@ -6,9 +6,8 @@ function Services() {
   return (
     <div id="services" className="services-container">
       <section
-        className="hero-section"
-        style={{ backgroundImage: `url(${projectImage})` }}
-      >
+        className="service-hero-section"
+        style={{ backgroundImage: `url(${projectImage})` }}>
         <div className="overlay">
           <h2>Our Services</h2>
           <p>
